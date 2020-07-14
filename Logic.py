@@ -49,8 +49,10 @@ class Player():
     def get_score(self):
         self.score = []
         for i in range(len(self.hand)):
-            x = list(self.hand[i])
-            del x[-1]
+            x = list(self.hand[i])  # sets x to a card
+            del x[-1]  # removes the suit from the card
+            if x in (['1', '1'], ['1', '2'], ['1', '3']):  # set value of face cards to 10
+                x = ['1', '0']
             self.score.append("".join(x))
 
         if 'A' not in self.score:
