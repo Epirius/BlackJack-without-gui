@@ -1,5 +1,6 @@
 import random
 
+num_decks = 4 #ammount of decks used
 
 class Cards():
 
@@ -8,10 +9,11 @@ class Cards():
 
     def generate_deck(self):
         self.deck = []
-        for i in ['H', 'D', 'S', 'C']:
-            self.deck.append('A' + i)
-            for j in range(2, 14):
-                self.deck.append(str(j) + i)
+        for i in range(num_decks):
+            for i in ['H', 'D', 'S', 'C']:
+                self.deck.append('A' + i)
+                for j in range(2, 14):
+                    self.deck.append(str(j) + i)
         return self.deck
 
     def shuffle(self):
