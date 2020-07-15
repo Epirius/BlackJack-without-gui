@@ -1,6 +1,6 @@
 import random
 
-num_decks = 4 #ammount of decks used
+num_decks = 4  # ammount of decks used
 
 class Cards():
 
@@ -33,6 +33,8 @@ class Player():
         self.deck = deck
         self.player_id = player_id
         self.final_score = -1
+        self.money = 500
+        self.bet = 0
 
     # draw 2 hands first time
     def draw_hand(self):
