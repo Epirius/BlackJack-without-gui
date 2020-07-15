@@ -2,5 +2,4 @@
 
 all made from my own code.
 TODO:
--add multiple rounds (currently game ends after one hand)
--add money
+-remove players that run out of money. (currently if any player runs out, the game softlocks due to invalid amount bet)
